@@ -5,7 +5,7 @@ const path = require('path');
 const commentBlockRegex = /<!-- START JSOPX NOVA DOCX HEADER[\s\S]*?END JSOPX NOVA DOCX HEADER -->/g;
 
 // Read the main README.md file
-let mainMarkdown = fs.readFileSync('./DocsX/AllGlobal/Includes/Templates/BasicMarkdownPage.md', 'utf8');
+let mainMarkdown = fs.readFileSync('./DocsX/AllGlobal/Master/Includes/Templates/BasicMarkdownPage.md', 'utf8');
 
 
 // Manually replace {{[jsopx-includes](path)}} with the file content
@@ -23,7 +23,7 @@ mainMarkdown = mainMarkdown.replace(/\{\{\[jsopx-includes\]\((.*?)\)\}\}/g, (mat
 mainMarkdown = mainMarkdown.replace(commentBlockRegex, '');
 
 // Save the processed markdown (no HTML conversion involved)
-fs.writeFileSync('./DocsX/AllGlobal/Includes/Templates/BasicMarkdownPage-processed.md', mainMarkdown);
+fs.writeFileSync('./DocsX/AllGlobal/Master/Includes/Templates/BasicMarkdownPage-processed.md', mainMarkdown);
 
 
 console.log('Markdown processing complete for BasicMarkdownPage.md. Output saved locally to AllGlobal in DocsX as BasicMarkdownPage-processed.md for testing purposes');

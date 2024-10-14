@@ -104,7 +104,7 @@ function createSubTemplate(subTemplatePath, parentPathLink, isDraft) {
     content = insertNavigationLinks(content, parentPathLink, true);
     const finalSubPath = subTemplatePath.replace('DocsX', 'Docs')
         .replace('AllGlobal', 'JSopX')
-        .replace('Includes\\Templates\\SubTemplates', 'Master');
+        .replace('Master\\Includes\\Templates\\SubTemplates', 'Master');
 
     fs.writeFileSync(finalSubPath, content);
     console.log(`Processed sub-template saved to: ${finalSubPath}`);
@@ -136,7 +136,7 @@ function processParentTemplate(parentTemplatePath, subTemplatesDir, isDraft) {
 
     const finalParentPath = parentTemplatePath.replace('DocsX', 'Docs')
         .replace('AllGlobal', 'JSopX')
-        .replace('Includes/Templates', 'Master');
+        .replace('Master/Includes/Templates', 'Master');
     fs.writeFileSync(finalParentPath, parentContent);
     console.log(`Processed parent template saved to: ${finalParentPath}`);
 
@@ -165,7 +165,7 @@ function processPhases(parentTemplatePath, subTemplatesDir, childIncludesDir) {
 }
 
 // Example usage
-const parentTemplatePath = 'DocsX/AllGlobal/Includes/Templates/Phases.md';
-const subTemplatesDir = 'DocsX/AllGlobal/Includes/Templates/SubTemplates/Phases';
-const childIncludesDir = 'DocsX/AllGlobal/Includes/Content/Template/Phases';
+const parentTemplatePath = 'DocsX/AllGlobal/Master/Includes/Templates/Phases.md';
+const subTemplatesDir = 'DocsX/AllGlobal/Master/Includes/Templates/SubTemplates/Phases';
+const childIncludesDir = 'DocsX/AllGlobal/Master/Includes/Content/Template/Phases';
 processPhases(parentTemplatePath, subTemplatesDir, childIncludesDir);

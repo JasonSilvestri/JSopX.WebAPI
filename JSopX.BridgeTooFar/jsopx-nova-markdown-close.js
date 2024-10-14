@@ -21,10 +21,10 @@
 //const hiddenDir = path.join(__dirname, '.hidden');
 
 //// Define paths for the current files
-//const docsIncludes = path.join(__dirname, 'DocsX/AllGlobal/Includes');
-//const docsReadme = path.join(__dirname, 'DocsX/AllGlobal/README.md');
-//const hiddenIncludes = path.join(__dirname, '.hidden/DocsX/AllGlobal/Includes');
-//const hiddenReadme = path.join(__dirname, '.hidden/DocsX/AllGlobal/README.md');
+//const docsIncludes = path.join(__dirname, 'DocsX/AllGlobal/Master/Includes');
+//const docsReadme = path.join(__dirname, 'DocsX/AllGlobal/Master/README.md');
+//const hiddenIncludes = path.join(__dirname, '.hidden/DocsX/AllGlobal/Master/Includes');
+//const hiddenReadme = path.join(__dirname, '.hidden/DocsX/AllGlobal/Master/README.md');
 
 //// Check if the doc and hidden directories exist
 //if (fs.existsSync(docsDir) && fs.existsSync(hiddenDir)) {

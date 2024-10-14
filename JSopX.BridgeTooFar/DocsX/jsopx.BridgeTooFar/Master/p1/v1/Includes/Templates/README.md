@@ -8,13 +8,13 @@ toc: true
 END JSOPX NOVA DOCX HEADER -->
 
 
-{{[jsopx-includes](./DocsX/AllGlobal/Includes/Content/Common/Draft-Notice.md)}}
+{{[jsopx-includes](./DocsX/AllGlobal/Master/Includes/Content/Common/Draft-Notice.md)}}
 
 ## Overview
 
 {{[jsopx-includes](./DocsX/jsopx.BridgeTooFar/Master/p1/v1/Includes/Content/Template/README/Overview.md)}}
 
-{{[jsopx-includes](./DocsX/AllGlobal/Includes/Content/Common/Current-Phase.md)}}
+{{[jsopx-includes](./DocsX/AllGlobal/Master/Includes/Content/Common/Current-Phase.md)}}
 
 ## Table of Contents
 
@@ -31,9 +31,9 @@ END JSOPX NOVA DOCX HEADER -->
 7. [Usage](#usage)
 8. [In Conclusion](#in-conclusion)
 
-{{[jsopx-includes](./DocsX/AllGlobal/Includes/Content/Common/Alerts.md)}}
+{{[jsopx-includes](./DocsX/AllGlobal/Master/Includes/Content/Common/Alerts.md)}}
 
-{{[jsopx-includes](./DocsX/AllGlobal/Includes/Content/Common/Alerts-Current.md)}}
+{{[jsopx-includes](./DocsX/AllGlobal/Master/Includes/Content/Common/Alerts-Current.md)}}
 
 [Back to Top](#table-of-contents)
 
@@ -83,4 +83,4 @@ END JSOPX NOVA DOCX HEADER -->
 
 [Back to Top](#table-of-contents)
 
-{{[jsopx-includes](./DocsX/AllGlobal/Includes/Layout/Footer.md)}}
+{{[jsopx-includes](./DocsX/AllGlobal/Master/Includes/Layout/Footer.md)}}
