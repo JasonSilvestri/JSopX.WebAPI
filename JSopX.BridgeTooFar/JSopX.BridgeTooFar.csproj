@@ -55,6 +55,10 @@ The JSopX™ Open ProjectX Bridge Too Far Solution, is evolving into a centraliz
     <ProjectReference Include="..\JSopX.ClassLibrary\JSopX.ClassLibrary\JSopX.ClassLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DocsX\jsopx.WebAPI\Master\p1\v1\Includes\Content\Template\SubTemplate\" />
+    <Folder Include="DocsX\jsopx.WebAPI\Master\p1\v1\Includes\Templates\SubTemplates\" />
+    <Folder Include="DocsX\jsopx.ClassLibrary\Master\p1\v1\Includes\Content\Template\SubTemplate\" />
+    <Folder Include="DocsX\jsopx.ClassLibrary\Master\p1\v1\Includes\Templates\SubTemplates\" />
     <Folder Include="DocsX\jsopx.BridgeTooFar\Master\p1\v1\Includes\Content\Template\SubTemplate\" />
     <Folder Include="DocsX\jsopx.BridgeTooFar\Master\p1\v1\Includes\Templates\SubTemplates\" />
     <Folder Include="Docs\jsopx.BridgeTooFar\Master\p1\v1\" />
