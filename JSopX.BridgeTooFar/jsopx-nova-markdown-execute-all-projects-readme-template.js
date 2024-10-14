@@ -40,7 +40,7 @@ function handleProperties(properties, filePath) {
     return true;
 }
 
-// Function to scan a directory recursively for markdown files, excluding 'Includes' directories
+// Function to scan directories recursively for markdown files, limiting to Templates and SubTemplates
 function findMarkdownFiles(dir) {
     let markdownFiles = [];
     const files = fs.readdirSync(dir);
@@ -49,18 +49,18 @@ function findMarkdownFiles(dir) {
         const filePath = path.join(dir, file);
         const stat = fs.statSync(filePath);
 
-        // Exclude 'Includes' directories
-        if (stat.isDirectory() && !file.includes('Includes')) {
+        // Only process files in Templates or SubTemplates directories, and exclude others like Content
+        if (stat.isDirectory() && (file.includes('Templates') || file.includes('SubTemplates'))) {
             markdownFiles = markdownFiles.concat(findMarkdownFiles(filePath)); // Recursive call for subdirectories
-        } else if (file.endsWith('.md') && !filePath.includes('Includes')) {
-            markdownFiles.push(filePath); // Only include markdown files not in 'Includes'
+        } else if (file.endsWith('.md') && (filePath.includes('Templates') || filePath.includes('SubTemplates'))) {
+            markdownFiles.push(filePath); // Only include markdown files in Templates/SubTemplates
         }
     });
 
     return markdownFiles;
 }
 
-// Function to process includes in markdown
+// Function to process includes in markdown files
 function processIncludes(content) {
     return content.replace(/\{\{\[jsopx-includes\]\((.*?)\)\}\}/g, (match, includePath) => {
         const absolutePath = path.join(__dirname, includePath);
@@ -73,12 +73,12 @@ function processIncludes(content) {
     });
 }
 
-// Function to remove comments from markdown
+// Function to remove comments from markdown files
 function removeComments(content) {
     return content.replace(commentBlockRegex, '');
 }
 
-// Function to generate Table of Contents, while ignoring footer sections
+// Function to generate a Table of Contents, while ignoring footer sections
 function generateTOC(content) {
     const toc = [];
     const lines = content.split('\n');
@@ -118,12 +118,12 @@ function insertTOC(content, toc) {
     return `# Table of Contents\n${toc}\n\n${content}`;
 }
 
-// Function to clean hidden characters
+// Function to clean hidden characters from markdown files
 function cleanHiddenCharacters(content) {
     return content.replace(/^\uFEFF/, '').replace(/\s+$/, '');
 }
 
-// Function to handle draft notices
+// Function to handle draft notices in markdown files
 function handleDraftNotice(content, isDraft) {
     const draftRegex = />\s*\[!\s*CAUTION\s*\]\s*>\s*\*\*\s*This\s+is\s+a\s+DRAFT\s*:\s*\*\*[\s\S]*?>[\s\S]*?\n{0,2}/g;
 
@@ -134,7 +134,7 @@ function handleDraftNotice(content, isDraft) {
     }
 }
 
-// Function to process markdown files (universal operations for all projects)
+// Function to process markdown files (only Templates and SubTemplates)
 function processMarkdownFile(filePath) {
     let markdownContent = fs.readFileSync(filePath, 'utf8');
     const properties = extractCommentProperties(markdownContent);
@@ -147,7 +147,7 @@ function processMarkdownFile(filePath) {
         return;
     }
 
-    // Clean Hidden Characters
+    // Clean hidden characters
     markdownContent = cleanHiddenCharacters(markdownContent);
 
     // Process includes
@@ -165,10 +165,10 @@ function processMarkdownFile(filePath) {
         markdownContent = insertTOC(markdownContent, toc);
     }
 
-    // Adjust file path for final Docs directory output, ensuring Includes are excluded
+    // Adjust file path for final Docs directory output
     const processedFilePath = filePath
         .replace('DocsX', 'Docs') // Adjust to Docs directory
-        .replace(/Includes\/Templates\//, ''); // Exclude 'Includes/Templates' from final path
+        .replace(/Includes\/Templates\//, '') // Exclude Includes/Templates from final path
 
     fs.writeFileSync(processedFilePath, markdownContent);
     console.log(`Processed markdown saved to: ${processedFilePath}`);
