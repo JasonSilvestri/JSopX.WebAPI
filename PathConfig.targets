@@ -35,7 +35,7 @@
   <!-- Define a target to output messages - this whole message section should be commented out in production -->
   <Target Name="BridgeTooFarReferencePathConfigCheck">
     <!-- Print a message if PathConfig.targets is loaded -->
-    <Message Text="JSopX Nova: START PathConfig.targets file check FOR official JSopX RCLxProper Project... " Importance="high" />
+    <Message Text="JSopX Nova: START PathConfig.targets file check FOR official JSopX Bridge Too Far Project... " Importance="high" />
     <Message Text="JSopX Nova: PathConfig.targets file Found. Loading... " Importance="high" />
     <Message Text="JSopX Nova: Current Project Path = $(ProjectPath)" Importance="high" />
     <Message Text="JSopX Nova: Solution Path = $(RootPath)" Importance="high" />
