@@ -19,13 +19,6 @@ The JSopX™ Open ProjectX Bridge Too Far Solution, is evolving into a centraliz
     <Title>JSopX™ Bridge Too Far Open Project EXperience</Title>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="DocsX\JSopX.OpenProjectX\**" />
-    <Content Remove="DocsX\JSopX.OpenProjectX\**" />
-    <EmbeddedResource Remove="DocsX\JSopX.OpenProjectX\**" />
-    <None Remove="DocsX\JSopX.OpenProjectX\**" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
