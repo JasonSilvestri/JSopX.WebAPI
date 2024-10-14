@@ -1,6 +1,4 @@
-﻿
-# JSopX™ Open Project EXperiences : Bridge Too Far
-
+# JSopX™ Open Project EXperiences : Web API
 From the ﻿jSilvestri.com BETA v 2024 JSopX™ Open Project EXperiences Collection of Projects
 
 
@@ -8,16 +6,16 @@ From the ﻿jSilvestri.com BETA v 2024 JSopX™ Open Project EXperiences Collect
 
 
 
-> [!CAUTION]
-> **This is a DRAFT:**
-> 
+
+
+ 
 > The content before you is a draft version of the document. It **should not** be considered **accurate**. In fact, drafts will often times be for different reasons, such as testing styles, content, etc. The content itself may have only been used as a placeholder, making sections, or even the entire document contain information not relative to this project.
 
 
 ## Overview
 
 ﻿
-The `JSopX.BridgeTooFar` Project (i.e., _jSilvestri.com BETA v 2024 JSopX™ Bridge Too Far Open Project EXperience_) is one of several, FREE, open-source projects, included in the first-of-its-kind, Multi-Platform, Multi-Stack, `JSopX™ Open Project EXperiences Collection` Enterprise-Level Application.
+The `JSopX.WebAPI` Project (i.e., _jSilvestri.com BETA v 2024 JSopX™ Web API Open Project EXperience_) is one of several, FREE, open-source projects, included in the first-of-its-kind, Multi-Platform, Multi-Stack, `JSopX™ Open Project EXperiences Collection` Enterprise-Level Application.
 
 This suite of projects, uses some of the most advanced client-side and server-side technologies of today, such as Asp.NET Core, Blazor, .NET MAUI, Angular, React, Node.JS, Vue &amp; more! All access the same server-side Web API, while using the same client-side, look-and-feel resources and assets across all projects, constructed as a centeralized, unified, enterprise-level soluiton, and available as responsive web design for most mobile, tablet, laptop & desktop web browsers, as a Windows, Linux and Mac desktop application, and as a native mobile app for Iphone, Android, Samsung Galaxy and Windows Phone.
 
