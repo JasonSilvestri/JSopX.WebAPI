@@ -1,15 +1,15 @@
-﻿jSilvestri.com BETA v 2024 JSopX™ OpenX Demo Collection Project: 
-[JSopX™ Asp.NET Core Class Library Project](https://github.com/JasonSilvestri/JSopX.ClassLibrary)
+﻿jSilvestri.com BETA v 2024 JSopX™ Open ProjectX Bridge Too Far Solution: 
+[JSopX™ Open ProjectX Bridge Too Far Solution](https://github.com/JasonSilvestri/JSopX.BridgeTooFar)
 
-Phase 1 of 4:
+Phase 1 of X:
 
-[Licensed under MIT](https://github.com/JasonSilvestri/JSopX.ClassLibrary/blob/master/LICENSE.txt)
+[Licensed under MIT](https://github.com/JasonSilvestri/JSopX.BridgeTooFar/blob/master/LICENSE.txt)
 
 © 2024 Jason Silvestri · All Rights Reserved  
 
 ============================================================================
 Authors & Developers of Code: Jason Silvestri, 
-Solution Architect, Lead Sr. Multi-Platform Software Engineer & .NET Full-Stack Developer
+Solution Architect, Lead Sr. Multi-Platform, Multi-Stack, .NET Full-Stack Developer
 
 Ownership: Jason Silvestri
 ============================================================================
