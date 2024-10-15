@@ -48,7 +48,7 @@
   <!-- Define a target to output messages - this whole message section should be commented out in production -->
   <Target Name="ClassLibraryReferencePathConfigCheck">
     <!-- Print a message if PathConfig.targets is loaded -->
-    <Message Text="JSopX Nova: START PathConfig.targets file check FOR official JSopX Class Library Project... " Importance="high" />
+    <Message Text="JSopX Nova: START PathConfig.targets file check FOR official JSopX Class Library Project for Bride Too Far... " Importance="high" />
     <Message Text="JSopX Nova: PathConfig.targets file Found. Loading... " Importance="high" />
     <Message Text="JSopX Nova: Current Project Path = $(ProjectPath)" Importance="high" />
     <Message Text="JSopX Nova: Solution Path = $(RootPath)" Importance="high" />
@@ -56,7 +56,7 @@
     <Message Text="JSopX Nova: Root Solution Path Depth: $(RootPathDepth)" Importance="high"  />
     <Message Text="JSopX Nova: Directory Depth Difference = $(PathDepthDiff)" Importance="high" />
     <Message Text="JSopX Nova: Final Directory structure and project for  Bridge Too Far = $(ClassLibraryBridgeTooFarPath)\JSopX.BridgeTooFar.csproj" Importance="high" />
-    <Message Text="JSopX Nova: END PathConfig.targets file check FOR official JSopX Class Library Project... " Importance="high" />
+    <Message Text="JSopX Nova: END PathConfig.targets file check FOR official JSopX Class Library Project for Bridge Too Far... " Importance="high" />
   </Target>
 
 </Project>
