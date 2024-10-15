@@ -1,0 +1,22 @@
+{
+  "build": "C:/All/Repos/jSilvestri2024WebApiDemoCollection/JSopX.BridgeTooFar/JSopX.BridgeTooFar/docs/jsopx/jason-silvestri/jsopx-bridge-too-far/p1/v1/README.md",
+  "files": {
+    "C:/All/Repos/jSilvestri2024WebApiDemoCollection/JSopX.BridgeTooFar/JSopX.BridgeTooFar/docs/jsopx/jason-silvestri/jsopx-bridge-too-far/p1/v1/README.md": [
+      "C:/All/Repos/jSilvestri2024WebApiDemoCollection/JSopX.BridgeTooFar/JSopX.BridgeTooFar/docs/jsopx/jason-silvestri/jsopx-bridge-too-far/includes/content/includes-test.md",
+      "C:/All/Repos/jSilvestri2024WebApiDemoCollection/JSopX.BridgeTooFar/JSopX.BridgeTooFar/docs/jsopx/jason-silvestri/jsopx-bridge-too-far/Includes/Content/Common/Alerts.md",
+      "C:/All/Repos/jSilvestri2024WebApiDemoCollection/JSopX.BridgeTooFar/JSopX.BridgeTooFar/docs/jsopx/jason-silvestri/jsopx-bridge-too-far/includes/layout/footer.md"
+    ]
+  }
+}
+
+
+//{
+//  "build": "docs/jsopx/jason-silvestri/jsopx-bridge-too-far/p1/v1/README.md",
+//  "files": {
+//    "docs/jsopx/jason-silvestri/jsopx-bridge-too-far/p1/v1/README.md": [
+//      "docs/jsopx/jason-silvestri/jsopx-bridge-too-far/includes/content/includes-test.md",
+//      "docs/jsopx/jason-silvestri/jsopx-bridge-too-far/Includes/Content/Common/Alerts.md",
+//      "docs/jsopx/jason-silvestri/jsopx-bridge-too-far/includes/layout/footer.md"
+//    ]
+//  }
+//}
