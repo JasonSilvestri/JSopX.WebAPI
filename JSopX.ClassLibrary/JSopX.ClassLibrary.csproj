@@ -1,5 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="ClassLibraryReferencePathConfigCheck">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+ <!--<Project Sdk="Microsoft.NET.Sdk" InitialTargets="ClassLibraryReferencePathConfigCheck">-->
+    
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -33,18 +34,18 @@
 
   <!--Option 1: Original-->
 
-  <!-- Import if the file exists -->
+  <!-- Import if the file exists --><!--
   <Import Project="..\PathConfig.targets" Condition="Exists('..\PathConfig.targets')" />
 
-  <!-- Default static project references if the file does not exist -->
+  --><!-- Default static project references if the file does not exist --><!--
   <ItemGroup Condition="Exists('..\PathConfig.targets')">
     <ProjectReference Include="$(ClassLibraryBridgeTooFarPath)\JSopX.BridgeTooFar.csproj" />
   </ItemGroup>
 
 
-  <!-- Default static project references if the file does not exist -->
+  --><!-- Default static project references if the file does not exist --><!--
   <ItemGroup Condition="!Exists('..\PathConfig.targets')">
     <ProjectReference Include="..\JSopX.BridgeTooFar\JSopX.BridgeTooFar\JSopX.BridgeTooFar.csproj" />
-  </ItemGroup>
+  </ItemGroup>-->
   
 </Project>
