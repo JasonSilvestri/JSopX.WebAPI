@@ -20,6 +20,13 @@
     <WebAPIClassLibraryPath Condition=" '$(PathDepthDiff)' == '3' ">..\..\..\..\JSopX.ClassLibrary\JSopX.ClassLibrary</WebAPIClassLibraryPath>
     <WebAPIClassLibraryPath Condition=" '$(PathDepthDiff)' == '4' ">..\..\..\..\..\JSopX.ClassLibrary\JSopX.ClassLibrary</WebAPIClassLibraryPath>
 
+    <!-- Conditional Property Setting Based on PathDepthDiff -->
+    <WebAPIBridgeTooFarPath Condition=" '$(PathDepthDiff)' == '0' ">..\JSopX.BridgeTooFar\JSopX.BridgeTooFar</WebAPIBridgeTooFarPath>
+    <WebAPIBridgeTooFarPath Condition=" '$(PathDepthDiff)' == '1' ">..\..\JSopX.BridgeTooFar\JSopX.BridgeTooFar</WebAPIBridgeTooFarPath>
+    <WebAPIBridgeTooFarPath Condition=" '$(PathDepthDiff)' == '2' ">..\..\..\JSopX.BridgeTooFar\JSopX.BridgeTooFar</WebAPIBridgeTooFarPath>
+    <WebAPIBridgeTooFarPath Condition=" '$(PathDepthDiff)' == '3' ">..\..\..\..\JSopX.BridgeTooFar\JSopX.BridgeTooFar</WebAPIBridgeTooFarPath>
+    <WebAPIBridgeTooFarPath Condition=" '$(PathDepthDiff)' == '4' ">..\..\..\..\..\JSopX.BridgeTooFar\JSopX.BridgeTooFar</WebAPIBridgeTooFarPath>
+
   </PropertyGroup>
 
 
@@ -28,6 +35,10 @@
 
     <!-- Use the dynamically resolved path -->
     <ProjectReference Include="$(WebAPIClassLibraryPath)\JSopX.ClassLibrary.csproj" />
+
+
+    <!-- Use the dynamically resolved path -->
+    <ProjectReference Include="$(WebAPIBridgeTooFarPath)\JSopX.BridgeTooFar.csproj" />
 
   </ItemGroup>
 
@@ -43,6 +54,17 @@
     <Message Text="JSopX Nova: Directory Depth Difference = $(PathDepthDiff)" Importance="high" />
     <Message Text="JSopX Nova: Final Directory structure and project for Class Library = $(WebAPIClassLibraryPath)\JSopX.ClassLibrary.csproj" Importance="high" />
     <Message Text="JSopX Nova: END PathConfig.targets file check FOR official JSopX WebAPI Project... " Importance="high" />
-  </Target>
+ 
 
+  <!-- Print a message if PathConfig.targets is loaded -->
+  <Message Text="JSopX Nova: START PathConfig.targets file check FOR official JSopX WebAPI Project... " Importance="high" />
+  <Message Text="JSopX Nova: PathConfig.targets file Found. Loading... " Importance="high" />
+  <Message Text="JSopX Nova: Current Project Path = $(ProjectPath)" Importance="high" />
+  <Message Text="JSopX Nova: Solution Path = $(RootPath)" Importance="high" />
+  <Message Text="JSopX Nova: Project Path Depth: $(ProjectPathDepth)" Importance="high"  />
+  <Message Text="JSopX Nova: Root Solution Path Depth: $(RootPathDepth)" Importance="high"  />
+  <Message Text="JSopX Nova: Directory Depth Difference = $(PathDepthDiff)" Importance="high" />
+  <Message Text="JSopX Nova: Final Directory structure and project for Bridge Too Far = $(WebAPIBridgeTooFarPath)\JSopX.BridgeTooFar.csproj" Importance="high" />
+  <Message Text="JSopX Nova: END PathConfig.targets file check FOR official JSopX WebAPI Project... " Importance="high" />
+  </Target>
 </Project>
