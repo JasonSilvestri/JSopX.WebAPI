@@ -25,12 +25,12 @@
   </ItemGroup>
 
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <None Include="..\JSopX.BridgeTooFar\JSopX.BridgeTooFar\Docs\jsopx.ClassLibrary\Master\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
+  </ItemGroup>-->
 
 
   <ItemGroup>
