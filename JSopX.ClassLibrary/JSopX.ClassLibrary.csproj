@@ -31,12 +31,6 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <ProjectReference Include="..\JSopX.BridgeTooFar\JSopX.BridgeTooFar\JSopX.BridgeTooFar.csproj" />
-  </ItemGroup>
-
-
   <!--Option 1: Original-->
 
   <!-- Import if the file exists -->
