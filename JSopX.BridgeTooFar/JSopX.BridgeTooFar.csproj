@@ -1,5 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
-  <!--<Project Sdk="Microsoft.NET.Sdk.Razor" InitialTargets="BridgeTooFarReferencePathConfigCheck">-->
+  <Project Sdk="Microsoft.NET.Sdk.Razor" InitialTargets="BridgeTooFarReferencePathConfigCheck">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -45,20 +44,20 @@ The JSopX™ Open ProjectX Bridge Too Far Solution, is evolving into a centraliz
   </ItemGroup>
 
 
-  <!--Option 1: Original--><!--
+  <!--Option 1: Original-->
 
-  --><!-- Import if the file exists --><!--
+   <!--Import if the file exists--> 
   <Import Project="..\PathConfig.targets" Condition="Exists('..\PathConfig.targets')" />
 
-  --><!-- Default static project references if the file does not exist --><!--
+   <!--Default static project references if the file does not exist--> 
   <ItemGroup Condition="Exists('..\PathConfig.targets')">
     <ProjectReference Include="$(BridgeTooFarClassLibraryPath)\JSopX.ClassLibrary.csproj" />
   </ItemGroup>
 
 
-  --><!-- Default static project references if the file does not exist --><!--
+   <!--Default static project references if the file does not exist--> 
   <ItemGroup Condition="!Exists('..\PathConfig.targets')">
     <ProjectReference Include="..\JSopX.ClassLibrary\JSopX.ClassLibrary\JSopX.ClassLibrary.csproj" />
-  </ItemGroup>-->
+  </ItemGroup>
 
 </Project>
